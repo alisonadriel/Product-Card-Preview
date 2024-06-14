@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 32px;
+    font-family: "Fraunces", sans-serif;
+}
+
+ article span:first-child{
+    color: var(--cinza);
+}
+
+p, span{
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    /* primary color */
+    --ciano: hsl(158, 36%, 37%);
+    --creme: hsl(30, 38%, 92%);
+
+    /* neutral */
+    --darkblue: hsl(212, 21%, 14%);
+    --cinza: hsl(228, 12%, 48%);
+    --branco: hsl(0, 0%, 100%);
+}
+
+body{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--creme);
+    overflow: hidden;
+}
+
+.card{
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+
+    background-color: var(--branco);
+    border-radius: 20px;
+}
+
+.image{
+min-width: 50%;
+height: 100%;
+background-position: center;
+background-size: cover;
+background-image:url(images/image-product-desktop.jpg);
+}
+
+.card-info{
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-info span{
+    font-weight: bold;
+    color: var(--ciano);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.card-info h1{
+    font-size: 45px;
+    color: var(--darkblue);
+    line-height: 1.0;
+}
+
+.card-info p{
+    font-size: 16px;
+    color: var(--cinza);
+    line-height: 1.6rem;
+}
+
+.price{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.price span{
+    letter-spacing: 0;
+    color: var(--cinza);
+    text-decoration: line-through;
+    padding-right: 50px;
+}
+
+.price h1{
+    color: var(--ciano);
+}
+
+.btn{
+background-color:var(--ciano);
+padding: 20px 10px;
+border-radius: 4px;
+border: none;
+color: var(--branco);
+font-size: 20px;
+font-weight: bold;
+font-family: "Montserrat", sans-serif;
+cursor: pointer;
+transition-duration: 0.2s;
+}
+
+.cart-icon{
+    
+    padding-right: 10px;
+}
+
+.btn:hover{
+    background-color:rgb(36, 110, 94);
+    transform: translateY(-3px);
+}
